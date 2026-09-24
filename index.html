@@ -35,6 +35,15 @@ nav{display:flex;justify-content:space-between;align-items:center;padding:22px 0
 .points p{margin:0;color:var(--muted)}
 .btn{display:inline-block;background:var(--accent);color:var(--accent-ink);font-weight:600;letter-spacing:.08em;text-decoration:none;padding:16px 36px;border-radius:999px;transition:transform .15s}
 .btn:hover{transform:translateY(-2px)}
+.stories{padding:80px 0;text-align:center}
+.stories h2{font-size:clamp(1.7rem,3.6vw,2.4rem);margin:0 auto 40px;max-width:18em;line-height:1.2}
+.quotes{display:grid;grid-template-columns:repeat(3,1fr);gap:22px;text-align:left}
+.quote{background:var(--surface);border:1px solid var(--line);border-radius:22px;padding:30px 26px;margin:0}
+.quote::before{content:"“";font-family:Fraunces,Georgia,serif;font-size:3.2rem;line-height:.6;color:var(--accent);display:block;margin-bottom:8px}
+.quote p{margin:0 0 20px;font-size:1.02rem}
+.quote cite{font-style:normal;font-weight:600}
+.quote small{display:block;color:var(--muted);font-weight:400}
+@media (max-width:820px){.quotes{grid-template-columns:1fr}.stories{padding:56px 0}}
 footer{background:var(--surface);padding:28px 0 36px;text-align:center;color:var(--muted);font-size:.9rem;border-top:1px solid var(--line)}
 @media (max-width:820px){.grid{grid-template-columns:1fr;gap:36px}.mission{padding:56px 0}}
 </style>
@@ -75,6 +84,27 @@ footer{background:var(--surface);padding:28px 0 36px;text-align:center;color:var
         <li><span class="ico">🏠</span><div><h3>Uma nova chance</h3><p>Buscamos conectar nossos animais a pessoas dispostas a oferecer um lar responsável.</p></div></li>
       </ul>
       <a class="btn" id="adotar" href="https://wa.me/5511951139100" target="_blank" rel="noopener">QUERO ADOTAR</a>
+    </div>
+  </div>
+</section>
+<!-- ATENÇÃO: depoimentos abaixo são MODELOS. Substitua por relatos e nomes reais de adotantes (com autorização) antes de divulgar o site. -->
+<section class="stories" id="depoimentos">
+  <div class="wrap">
+    <div class="eyebrow">Depoimentos</div>
+    <h2>Histórias que terminaram em um lar cheio de amor</h2>
+    <div class="quotes">
+      <figure class="quote">
+        <p>Adotar foi a melhor decisão da nossa família. A equipe nos orientou em cada passo e hoje nossa casa é muito mais feliz.</p>
+        <cite>Mariana<small>Adotou um cãozinho</small></cite>
+      </figure>
+      <figure class="quote">
+        <p>Ele chegou tímido e hoje não sai do meu lado. Acompanhar essa transformação me ensinou o que é gratidão.</p>
+        <cite>Carlos<small>Adotou um cãozinho</small></cite>
+      </figure>
+      <figure class="quote">
+        <p>Todo o processo foi cuidadoso e transparente. Deu para sentir que a Patas de Esperança se importa de verdade com cada cão.</p>
+        <cite>Juliana<small>Adotou um cãozinho</small></cite>
+      </figure>
     </div>
   </div>
 </section>
